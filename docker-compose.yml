@@ -1,0 +1,9 @@
+db:
+  image: mysql
+  ports:
+    - "3306:3306"
+  volumes:
+#       ----- CHANGE MOUNT ROUTE -----
+    - $USERPROFILE/db:/var/lib/mysqlq
+  environment:
+    MYSQL_ROOT_PASSWORD: Admin123
